@@ -6,20 +6,64 @@ using System.Threading.Tasks;
 
 namespace Summator
 {
-    public static  class Summator
+
+
+
+    public static class Summator
     {
-        public static int Sum(int[] arr)
+        public static long Sum(int[] arr)
         {
-            int sum = arr[0];
-            for (int i = 1; i < arr.Length; i++)
+            long sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
-                Console.WriteLine(i);
+
+
+
+
             }
+
+
             return sum;
 
+
+        }
+        public static double Avarege(double[] arr)
+        {
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+
+
+            }
+            return  sum / arr.Length;
         }
 
-
+        public static double AddNumber(double firstNumber, double secondnumber)
+        {
+            return firstNumber + secondnumber;  
+        }
+        
+        public static int SumEvenNumbers(int[] arr)
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    sum += arr[i];
+                }
+            }
+            return sum;
+        }
     }
-}
+            
+        
+}     
+
+
+
+
